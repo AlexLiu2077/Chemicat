@@ -65,8 +65,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/AlexLiu2077/ACEtate.git
-cd ACEtate
+git clone https://github.com/AlexLiu2077/Chemicat.git
+cd Chemicat
 
 # 安装依赖
 npm install
@@ -89,7 +89,7 @@ npm run preview
 ## 🗂️ 项目结构
 
 ```
-ACEtate/
+Chemicat/
 ├── public/
 │   └── assets/
 │       ├── cats/          # 猫咪图片
@@ -133,4 +133,4 @@ ACEtate/
 
 ## 📄 License
 
-MIT © 2025 ACEtate
+MIT © 2025 Chemicat

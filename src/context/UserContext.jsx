@@ -16,21 +16,6 @@ function saveUser(data) {
 }
 
 
-const STORAGE_KEY = 'acetate_user';
-
-function loadUser() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : {};
-  } catch {
-    return {};
-  }
-}
-
-function saveUser(data) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-}
-
 const UserContext = createContext(null);
 
 export function UserProvider({ children }) {

@@ -37,10 +37,10 @@
   text-align: center;
   position: relative;
   z-index: 1;
-  background: var(--color-bg-card);
+  background: var(--color-glass);
   backdrop-filter: blur(20px) saturate(1.6);
   -webkit-backdrop-filter: blur(20px) saturate(1.6);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: 40px 28px;
   box-shadow: var(--shadow-card);
@@ -92,7 +92,7 @@
 }
 
 .button:hover {
-  background: var(--gradient-btn-hover);
+  background: var(--gradient-btn);
   box-shadow: 0 6px 24px rgba(124, 58, 237, 0.4);
   transform: translateY(-1px);
 }

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
 import styles from './RegisterPage.module.css';
+import { getAssetUrl } from '../utils/assetUrl';
+
 
 export default function RegisterPage() {
   const navigate = useNavigate();
@@ -17,7 +19,8 @@ export default function RegisterPage() {
 
   return (
     <div className={`${styles.container} fade-enter`}>
-      <img src="/assets/newicon.png" alt="Chemicat" className={styles.logoSmall} />
+      <img src={getAssetUrl('/assets/newicon.png')} alt="Chemicat" className={styles.logoSmall} />
+
 
       <form className={styles.stepWrapper} onSubmit={handleUsernameSubmit}>
         <h2 className={styles.heading}>请输入你的用户名</h2>

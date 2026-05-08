@@ -3,6 +3,8 @@ import { useUser } from '../../context/UserContext';
 import cats from '../../data/cats';
 import styles from './MyCatTab.module.css';
 import TopBar from '../TopBar';
+import { getAssetUrl } from '../../utils/assetUrl';
+
 
 export default function MyCatTab() {
   const {
@@ -26,7 +28,8 @@ export default function MyCatTab() {
     return 'happy';
   }, [interaction, intimacy, satiety]);
 
-  const videoSrc = cat ? `/assets/videos/${cat.id}_${videoState}.mp4` : '';
+  const videoSrc = cat ? getAssetUrl(`/assets/videos/${cat.id}_${videoState}.mp4`) : '';
+
   const [videoElement, setVideoElement] = useState(null);
 
   useEffect(() => {

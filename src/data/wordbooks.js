@@ -2,6 +2,8 @@ import {
   chemicalPrinciplesTextbookChapters,
   collegeTextbookChapters,
 } from './chapterChapters.js';
+import { getAssetUrl } from '../utils/assetUrl';
+
 
 const basicElementWords = [
   { id: 'hydrogen', term: 'Hydrogen (H)', meaning: '氢' },
@@ -198,14 +200,16 @@ const wordbooks = [
     id: 'college_chemistry',
     name: '大学化学',
     description: '大学化学课程词库',
-    image: '/assets/cover/cover1.png',
+    image: getAssetUrl('/assets/cover/cover1.png'),
+
     chapters: collegeChemistryChapters,
   },
   {
     id: 'chemical_principles',
     name: '化学原理',
     description: '化学原理课程词库',
-    image: '/assets/cover/cover2.png',
+    image: getAssetUrl('/assets/cover/cover2.png'),
+
     chapters: chemicalPrinciplesChapters,
   },
 ];

@@ -3,6 +3,8 @@ import { useUser } from '../../context/UserContext';
 import wordbooks from '../../data/wordbooks';
 import styles from './WordMemoryTab.module.css';
 import TopBar from '../TopBar';
+import { getAssetUrl } from '../../utils/assetUrl';
+
 
 function shuffle(items) {
   return [...items].sort(() => Math.random() - 0.5);
@@ -33,7 +35,8 @@ export default function WordMemoryTab({ onQuizActiveChange }) {
     id: 'favorite_memory',
     name: '重点记忆',
     description: '收藏的重点单词',
-    image: '/assets/cover/cover3.png',
+    image: getAssetUrl('/assets/cover/cover3.png'),
+
     chapters: [
       { id: 'favorite_words', title: '收藏单词', words: favoriteWords },
     ],
